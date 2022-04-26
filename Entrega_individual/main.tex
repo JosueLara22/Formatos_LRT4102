@@ -37,39 +37,53 @@
 % --------------------------------------------------------------------------------------------------------------------------------------------------------------
 % Escribir resumen 150-200 palabras
 \begin{abstract}
-Este es el abstract.              
+One of the main objectives of robotics is to improve the processes that are currently carried out, making them more efficient in different aspects. Therefore, every day there are new proposals for robots that can solve a problem or improve a process, these proposals include the design of the robot and the environment that accompanies it to carry out its task.
+The design of robots from scratch is convenient to provide specific solutions to a given problem. For this reason, in the present work, the design of a mobile robot that locates and dispenses the boxes of medicines in a pharmacy is carried out, in order to improve the attention time, limit the contact of people infected with a certain disease and improve the conditions of work for employees.
+The design will be carried out using SolidWorks for the design of the parts that will make up the robot to later use the ROS environment together with Gazebo to simulate the operation of the robot and verify if it performs its task efficiently.
 \end{abstract}
 
 % --------------------------------------------------------------------------------------------------------------------------------------------------------------
 \begin{multicols}{2} %Documento a dos columnas
-\section*{Section}\label{seccion}  
-Esta es una seccion
-\subsection*{Subsection}\label{subseccion}                              	% 
-Estas es una subseccion
-Texto en italicas \textit{italicas}
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[scale = 0.25]{1.png}
-	\caption{Titulo de la imagen}
-	\label{fig:label_fig}
-\end{figure}
-
-Texto en negritas \textbf{negritas}
-
+\section*{Problem description}\label{seccion}  
+Las farmacias presentan varias áreas de oportunidad en las que se puede mejorar el servicio de suministro de medicamentos, lo que las convierte en un área donde se puede implementar un sistema robótico que mejore las condiciones actuales.
+Las farmacias presentan varios aspectos en los que un sistema robótico puede mejorarlas. A continuación se muestran las principales razones que se tomaron en cuenta.
 \begin{itemize}
-	\item item
-	\item item
-	\item item
-	\item item
+	\item Las farmacias son un servicio fundamental en la sociedad, ya que estas suministran los medicamentos que aseguran la salud de la población. Si estas llegaran a faltar, se tendría una emergencia en el sector salud que puede traer consigo grandes consecuencias.
+	\item La implementación de un sistema automatizado asegura su funcionamiento en situaciones de emergencia
+	\item La condición sanitaria actual ha hecho evidente que las farmacias son un punto de riesgo en el que se pueden propagar enfermedades, esta situación ha aumentado en gravedad debido a la pandemia actual. Por ello es necesario limitar la capacidad de personas en los ambientes y, principalmente en las farmacias. 
+	\item Las farmacias contienen químicos que pueden ser dañinos a la exposición para el ser humano, por lo que asegura un mejor control de sustancias.
+	\item Los empleados pueden tener malas posturas y exponerse a movimientos riesgosos para alcanzar los medicamentos, además de tener largas jornadas laborales.
 \end{itemize}
 
-\begin{enumerate}
-    \item item 
-    \item item
-    \item item
-    \item item
-\end{enumerate}
+
+
+
+\subsection*{Objectives and justification}\label{subseccion}      
+
+% 
+The objectives for the design of the robotic system and the implementation in the pharmacy are the following:
+\begin{itemize}
+\item Limit human contact, especially with people who may have a contagious disease
+\item Improve the speed of service for pharmacy customers
+\item Improve the employment status of employees, to reduce their activities
+\item To be able to create a system that can be replicated in another pharmacy, and in this way, improve the service in other pharmacies.
+\end{itemize}
+Once the objectives are clear, a proposal is presented.
+
+\subsection*{Individual proposal and technical analysis}\label{subseccion}      
+The proposal for the development of the system that improves conditions in pharmacies is that of a robot that can identify the medicine boxes, to later reach them and be able to supply them to the customer. In this way, the previously set objectives are met.
+The design proposal consists of a vertical warehouse that contains the medicine boxes and a structure that contains the robot that will pick them up.
+This structure has a robot that can move along this warehouse and be able to extract the requested medicine.
+For this, it is necessary to have a drug identification system, to have a mechanical design and to have an analysis of the movement of the robot.
+
+Personally, I took charge of the part of understanding Ros's environment, to later carry out the simulation of the robot in Gazebo. My activities were complex, since I was using these tools for the first time in robot programming, so the learning curve was big.
+
+As for the analysis, the first simulations of the robot's mechanism were successful in the SolidWorks environment, so later work will be done on transferring the design to the Gazebo environment.
+
+\subsection*{Conclussion}\label{subseccion}      
+The progress in the design of the robotic system has been in accordance with the planning of the team and, individually, I have carried out the tasks in a satisfactory manner. As previously mentioned, some of the tools used were new so this required more work for the design of the robot, however, other tools were provided in other courses, which helped a lot in the development of the project.
+
+
 
 
 Comando para citar  \cite{Johana}
@@ -77,16 +91,10 @@ Comando para citar  \cite{Johana}
 % Bibliografía 
 %---------------------------------------------------------------------------------------------------------------------------------------------------------------
 \begin{thebibliography}{9}		
+5 Pharmacy Workplace Hazards to Prevent. (n.d.). Pharmacy Times. Retrieved April 25, 2022, from https://www.pharmacytimes.com/view/5-pharmacy-workplace-hazards-to-prevent 
 
-\bibitem{Johana}
-   Johana, H.(2009)
-   \emph{Lineas Equipotenciales}.
-   Recuperado de: https://es.slideshare.net/guestd93ebf/infome-2-lineas-equipotenciales-y-campo-electrico
+Evaluación del riesgo de contagio por Coronavirus SARS-COV-2 y medidas preventivas recomendadas en la prestación de servicios profesionales farmacéuticos asistenciales (SPFA) en la farmacia comunitaria (n.d.) 
 
- \bibitem{Teresa}
-   Teresa, B. (2015)
-   \emph{Electo Est\'atica}.
-   Recuperado de: http://www2.montes.upm.es/
    
 \end{thebibliography}
 
